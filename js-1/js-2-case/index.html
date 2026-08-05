@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Shopping Cart</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="app-header">
+        <h1>student management</h1>
+        <p></p>
+      </header>
+
+      <div class="content">
+        <section class="products">
+          <article class="product-card">
+            <div>
+              <strong>Wireless Headphones</strong>
+              <div class="product-price">$79.99</div>
+            </div>
+            <button
+              class="secondary-button"
+              data-name="Wireless Headphones"
+              data-price="79.99"
+            >
+              Add
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div>
+              <strong>Smart Watch</strong>
+              <div class="product-price">$129.00</div>
+            </div>
+            <button
+              class="secondary-button"
+              data-name="Smart Watch"
+              data-price="129.00"
+            >
+              Add
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div>
+              <strong>Eco Tote Bag</strong>
+              <div class="product-price">$24.50</div>
+            </div>
+            <button
+              class="secondary-button"
+              data-name="Eco Tote Bag"
+              data-price="24.50"
+            >
+              Add
+            </button>
+          </article>
+
+          <article class="product-card">
+            <div>
+              <strong>Coffee Maker</strong>
+              <div class="product-price">$89.00</div>
+            </div>
+            <button
+              class="secondary-button"
+              data-name="Coffee Maker"
+              data-price="89.00"
+            >
+              Add
+            </button>
+          </article>
+        </section>
+
+        <aside class="cart">
+          <h2>Cart</h2>
+          <div id="cartItems" class="cart-items">
+            <div class="empty-cart-message">Your cart is empty.</div>
+          </div>
+
+          <div class="summary">
+            <div class="row">
+              <span>Subtotal</span>
+              <strong id="subtotalAmount">$0.00</strong>
+            </div>
+            <div class="row">
+              <span>Shipping</span>
+              <strong id="shippingAmount">$0.00</strong>
+            </div>
+            <div class="row total-row">
+              <span>Total</span>
+              <strong id="totalAmount">$0.00</strong>
+            </div>
+          </div>
+
+          <button class="primary-button checkout-button">Checkout</button>
+        </aside>
+      </div>
+    </div>
+
+    <footer class="app-footer">
+      <p>parth tiwaskar prn 24070521067</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>

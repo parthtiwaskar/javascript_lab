@@ -1,0 +1,102 @@
+/* index2.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #fefe4f, #fe9000);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  background: #ffffff;
+  padding: 35px;
+  width: 380px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+form::before {
+  content: "🎓 Student Grading Sheet";
+  display: block;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #444;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #4facfe;
+  box-shadow: 0 0 8px rgba(79, 172, 254, 0.4);
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 12px;
+  background: #4facfe;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+input[type="button"]:hover {
+  background: #007bff;
+  transform: translateY(-2px);
+}
+
+input[type="button"]:active {
+  transform: scale(0.98);
+}
+
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+}
+
+.app-footer {
+  max-width: 900px;
+  margin: 24px auto 0;
+  padding: 16px 24px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.95rem;
+}

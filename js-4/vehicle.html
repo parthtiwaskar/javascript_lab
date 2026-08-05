@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vehicle Registration Case Study</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="vehicle.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Vehicle Registration</h1>
+    <form id="regForm">
+      <label for="ownerName">Owner Name</label>
+      <input id="ownerName" type="text" placeholder="John Doe" required />
+
+      <label for="vehicleNo">Vehicle Number</label>
+      <input id="vehicleNo" type="text" placeholder="AB12CD3456" required />
+
+      <label for="model">Model</label>
+      <input id="model" type="text" placeholder="Toyota Corolla" required />
+
+      <label for="color">Color</label>
+      <input id="color" type="text" placeholder="Red" required />
+
+      <button type="submit">Register</button>
+    </form>
+    <p id="feedback"></p>
+  </main>
+  <script src="vehicle.js"></script>
+</body>
+</html>

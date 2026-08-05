@@ -1,0 +1,155 @@
+body {
+  margin: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  background: #f4f6fb;
+  color: #111827;
+}
+
+.app-shell {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.app-header {
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.app-header p {
+  margin: 8px 0 0;
+  color: #4b5563;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 20px;
+}
+
+.products,
+.cart {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.product-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 14px;
+  margin-bottom: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+}
+
+.product-card:last-child {
+  margin-bottom: 0;
+}
+
+.product-price {
+  color: #4338ca;
+  margin-top: 4px;
+}
+
+.cart h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.cart-items {
+  display: grid;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 14px;
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  background: #f8fafc;
+}
+
+.cart-item-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.empty-cart-message {
+  color: #6b7280;
+  padding: 14px;
+  border-radius: 14px;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.summary {
+  border-top: 1px solid #e5e7eb;
+  padding-top: 14px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 0.97rem;
+}
+
+.total-row {
+  font-weight: 100;
+}
+
+button {
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.primary-button {
+  width: 100%;
+  background: #4338ca;
+  color: #ffffff;
+  padding: 12px 14px;
+  font-weight: 700;
+}
+
+.secondary-button {
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 10px 14px;
+}
+
+button:hover {
+  opacity: 0.95;
+}
+
+@media (max-width: 760px) {
+  .content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.app-footer {
+  max-width: 900px;
+  margin: 24px auto 0;
+  padding: 16px 24px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 0.95rem;
+}

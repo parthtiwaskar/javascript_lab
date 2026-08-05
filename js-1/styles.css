@@ -1,0 +1,15 @@
+:root {
+  color-scheme: light;
+}
+
+body {
+  background: linear-gradient(135deg, #eef2ff 0%, #f8fafc 100%);
+}
+
+.box {
+  border-color: #cbd5e1;
+}
+
+#result {
+  font-weight: 600;
+}

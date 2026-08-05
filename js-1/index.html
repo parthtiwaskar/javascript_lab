@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline and External HTML/CSS/JS</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Inline CSS -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f6fb;
+        margin: 0;
+        padding: 20px;
+      }
+      .box {
+        max-width: 500px;
+        margin: 0 auto;
+        background: #fff;
+        border: 1px solid #dce1e8;
+        border-radius: 12px;
+        box-shadow: 0 6px 18px rgba(34, 60, 80, 0.08);
+        padding: 24px;
+      }
+      h1 {
+        margin-top: 0;
+        color: #253858;
+      }
+      .buttons {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      button {
+        border: none;
+        border-radius: 8px;
+        padding: 10px 16px;
+        cursor: pointer;
+        transition:
+          transform 0.15s ease,
+          box-shadow 0.15s ease;
+      }
+      button:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+      }
+      .inline-button {
+        background: #2e6aff;
+        color: #fff;
+      }
+      .external-button {
+        background: #13b5ac;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h1>Inline + External Example</h1>
+      <p>This page includes:</p>
+      <ul>
+        <li>Inline CSS inside a <code>&lt;style&gt;</code> block</li>
+        <li>Inline JavaScript inside a <code>&lt;script&gt;</code> block</li>
+        <li>External CSS via <code>styles.css</code></li>
+        <li>External JavaScript via <code>script.js</code></li>
+      </ul>
+
+      <div class="buttons">
+        <button class="inline-button" id="inlineButton">
+          Inline JS Action
+        </button>
+        <button class="external-button" id="externalButton">
+          External JS Action
+        </button>
+      </div>
+
+      <p id="result" style="margin-top: 18px; color: #475467"></p>
+    </div>
+
+    <footer
+      style="
+        text-align: center;
+        margin-top: 24px;
+        color: #6b7280;
+        font-size: 0.95rem;
+      "
+    >
+      parth tiwaaskar prn 24070521067 sec a
+    </footer>
+
+    <!-- Inline JS -->
+    <script>
+      document
+        .getElementById("inlineButton")
+        .addEventListener("click", function () {
+          document.getElementById("result").textContent =
+            "Inline JavaScript clicked!";
+        });
+    </script>
+
+    <!-- External JS -->
+    <script src="script.js"></script>
+  </body>
+</html>

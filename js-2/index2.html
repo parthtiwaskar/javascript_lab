@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>student grading sheet</title>
+    <link rel="stylesheet" href="index2.css" />
+  </head>
+  <body>
+    <form>
+      <label for="name">Student Name:</label>
+      <input type="text" id="name" name="name" /><br /><br />
+      <label for="subject">Subject:</label>
+      <input type="text" id="subject" name="subject" /><br /><br />
+      <label for="marks">Marks:</label>
+      <input
+        type="number"
+        id="marks"
+        name="marks"
+        placeholder="Enter marks"
+      /><br /><br />
+      <input
+        type="button"
+        value="Calculate grade"
+        onclick="calculateGrade()"
+      /><br /><br />
+      <div id="result"></div>
+      <footer class="app-footer">
+        <p>parth tiwaskar prn 24070521067</p>
+      </footer>
+      <script src="index2.js"></script>
+    </form>
+  </body>
+</html>
