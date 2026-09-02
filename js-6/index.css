@@ -1,0 +1,566 @@
+/* =========================================
+   GLOBAL
+   ========================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary: #4f46e5;
+  --primary-dark: #3730a3;
+  --primary-light: #eef2ff;
+
+  --success: #16a34a;
+  --success-bg: #dcfce7;
+
+  --danger: #dc2626;
+  --danger-bg: #fee2e2;
+
+  --text: #172033;
+  --text-light: #64748b;
+
+  --border: #e2e8f0;
+  --background: #f8fafc;
+  --white: #ffffff;
+
+  --shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+}
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Arial,
+    sans-serif;
+
+  min-height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at 10% 10%,
+      rgba(99, 102, 241, 0.14),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 90%,
+      rgba(59, 130, 246, 0.12),
+      transparent 30%
+    ),
+    #f8fafc;
+
+  color: var(--text);
+
+  padding: 50px 20px;
+}
+
+/* =========================================
+   MAIN CONTAINER
+   ========================================= */
+
+.container {
+  width: 850px;
+  max-width: 100%;
+
+  margin: auto;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border: 1px solid rgba(226, 232, 240, 0.8);
+
+  border-radius: 24px;
+
+  padding: 42px;
+
+  box-shadow: var(--shadow);
+
+  backdrop-filter: blur(10px);
+}
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+h1 {
+  text-align: center;
+
+  font-size: 34px;
+  font-weight: 800;
+
+  letter-spacing: -1px;
+
+  color: #111827;
+
+  margin-bottom: 8px;
+}
+
+h1::after {
+  content: "Validate, analyze and transform your text";
+
+  display: block;
+
+  margin-top: 10px;
+
+  font-size: 14px;
+  font-weight: 400;
+
+  letter-spacing: 0;
+
+  color: var(--text-light);
+}
+
+/* =========================================
+   FORM
+   ========================================= */
+
+form {
+  margin-top: 35px;
+}
+
+/* =========================================
+   LABEL
+   ========================================= */
+
+label {
+  display: block;
+
+  margin-top: 20px;
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  color: #334155;
+}
+
+/* =========================================
+   INPUT + TEXTAREA
+   ========================================= */
+
+input,
+textarea {
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border: 1.5px solid #dbe2ea;
+
+  border-radius: 10px;
+
+  background: #f8fafc;
+
+  color: #111827;
+
+  font-family: inherit;
+  font-size: 15px;
+
+  outline: none;
+
+  transition:
+    border 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Placeholder */
+
+input::placeholder,
+textarea::placeholder {
+  color: #94a3b8;
+}
+
+/* Focus */
+
+input:focus,
+textarea:focus {
+  background: #ffffff;
+
+  border-color: var(--primary);
+
+  box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+
+  transform: translateY(-1px);
+}
+
+/* Textarea */
+
+textarea {
+  min-height: 160px;
+
+  resize: vertical;
+
+  line-height: 1.6;
+}
+
+/* =========================================
+   SUBMIT BUTTON
+   ========================================= */
+
+button {
+  width: 100%;
+
+  margin-top: 28px;
+
+  padding: 15px 20px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+
+  color: white;
+
+  font-family: inherit;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  letter-spacing: 0.2px;
+
+  cursor: pointer;
+
+  box-shadow: 0 8px 20px rgba(79, 70, 229, 0.25);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+/* Hover */
+
+button:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 25px rgba(79, 70, 229, 0.32);
+
+  background: linear-gradient(135deg, #4f46e5, #3730a3);
+}
+
+/* Click */
+
+button:active {
+  transform: translateY(0);
+
+  box-shadow: 0 5px 12px rgba(79, 70, 229, 0.2);
+}
+
+/* =========================================
+   RESULT AREA
+   ========================================= */
+
+#result {
+  margin-top: 35px;
+}
+
+/* =========================================
+   RESULT MAIN CARD
+   ========================================= */
+
+.result-box {
+  background: #f8fafc;
+
+  border: 1px solid var(--border);
+
+  border-radius: 18px;
+
+  padding: 25px;
+
+  animation: resultAppear 0.4s ease;
+}
+
+/* Result animation */
+
+@keyframes resultAppear {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   RESULT TITLE
+   ========================================= */
+
+.result-box h2 {
+  text-align: center;
+
+  font-size: 22px;
+
+  font-weight: 800;
+
+  color: #1e293b;
+
+  margin-bottom: 25px;
+
+  padding-bottom: 18px;
+
+  border-bottom: 1px solid var(--border);
+}
+
+/* =========================================
+   RESULT SECTION
+   ========================================= */
+
+.section {
+  position: relative;
+
+  background: #ffffff;
+
+  border: 1px solid var(--border);
+
+  border-radius: 14px;
+
+  padding: 20px;
+
+  margin-top: 18px;
+
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.03);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Section hover */
+
+.section:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.06);
+}
+
+/* =========================================
+   SECTION HEADING
+   ========================================= */
+
+.section h3 {
+  display: flex;
+  align-items: center;
+
+  font-size: 16px;
+
+  font-weight: 800;
+
+  color: #312e81;
+
+  margin-bottom: 16px;
+}
+
+/* Blue line */
+
+.section h3::before {
+  content: "";
+
+  width: 4px;
+  height: 20px;
+
+  margin-right: 10px;
+
+  border-radius: 10px;
+
+  background: linear-gradient(to bottom, #6366f1, #4f46e5);
+}
+
+/* =========================================
+   RESULT TEXT
+   ========================================= */
+
+.section p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin: 10px 0;
+
+  font-size: 14px;
+
+  color: #475569;
+
+  line-height: 1.6;
+}
+
+/* Strong text */
+
+.section strong {
+  color: #1e293b;
+
+  font-weight: 700;
+}
+
+/* =========================================
+   VALID BADGE
+   ========================================= */
+
+.valid {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  background: var(--success-bg);
+
+  color: var(--success);
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  border: 1px solid #bbf7d0;
+}
+
+/* =========================================
+   INVALID BADGE
+   ========================================= */
+
+.invalid {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 5px 10px;
+
+  border-radius: 20px;
+
+  background: var(--danger-bg);
+
+  color: var(--danger);
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  border: 1px solid #fecaca;
+}
+
+/* =========================================
+   TEXT OUTPUT
+   ========================================= */
+
+.text-output {
+  margin-top: 10px;
+
+  padding: 15px;
+
+  background: #f8fafc;
+
+  border: 1px solid #e2e8f0;
+
+  border-radius: 10px;
+
+  color: #334155;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+
+  word-break: break-word;
+
+  white-space: pre-wrap;
+
+  max-height: 250px;
+
+  overflow-y: auto;
+}
+
+/* =========================================
+   CUSTOM SCROLLBAR
+   ========================================= */
+
+.text-output::-webkit-scrollbar {
+  width: 6px;
+}
+
+.text-output::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+.text-output::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.text-output::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .container {
+    padding: 25px 18px;
+
+    border-radius: 18px;
+  }
+
+  h1 {
+    font-size: 27px;
+  }
+
+  .result-box {
+    padding: 15px;
+  }
+
+  .section {
+    padding: 16px;
+  }
+
+  .section p {
+    display: block;
+  }
+
+  .section strong {
+    display: block;
+    margin-bottom: 3px;
+  }
+}
+
+/* =========================================
+   SMALL MOBILE
+   ========================================= */
+
+@media (max-width: 400px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px 14px;
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+
+  input,
+  textarea {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+}

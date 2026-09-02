@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Marks Analyzer</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <header>
+            <h1>Student Marks Analyzer</h1>
+            <p>Find the Maximum and Minimum Marks</p>
+        </header>
+
+        <div class="input-box">
+
+            <label>Enter marks separated by commas:</label>
+
+            <input
+                type="text"
+                id="marksInput"
+                placeholder="Example: 78, 92, 65, 88, 95, 72"
+            >
+
+            <button onclick="analyzeMarks()">
+                Analyze Marks
+            </button>
+
+        </div>
+
+        <div id="error"></div>
+
+        <div class="array-card">
+            <h2>Marks Array</h2>
+            <p id="marksArray">No marks entered yet.</p>
+        </div>
+
+        <div class="result-container">
+
+            <div class="result-card maximum">
+                <h3>Maximum Marks</h3>
+                <div id="maximum">--</div>
+            </div>
+
+            <div class="result-card minimum">
+                <h3>Minimum Marks</h3>
+                <div id="minimum">--</div>
+            </div>
+
+        </div>
+
+        <div class="details">
+            <h2>Analysis</h2>
+
+            <p id="maxMessage"></p>
+            <p id="minMessage"></p>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

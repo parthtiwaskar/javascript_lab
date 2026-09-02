@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Shopping Cart</h1>
+      <p class="subtitle">Add products to your cart</p>
+
+      <!-- Products -->
+      <div class="products">
+        <div class="product">
+          <h2>Headphones</h2>
+          <p>₹1,499</p>
+          <button onclick="addToCart('Headphones', 1499)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <h2>Keyboard</h2>
+          <p>₹999</p>
+          <button onclick="addToCart('Keyboard', 999)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <h2>Mouse</h2>
+          <p>₹599</p>
+          <button onclick="addToCart('Mouse', 599)">Add to Cart</button>
+        </div>
+
+        <div class="product">
+          <h2>USB Cable</h2>
+          <p>₹299</p>
+          <button onclick="addToCart('USB Cable', 299)">Add to Cart</button>
+        </div>
+      </div>
+
+      <!-- Cart -->
+      <div class="cart">
+        <h2>Your Cart</h2>
+
+        <div id="cartItems">
+          <p class="empty">Your cart is empty.</p>
+        </div>
+
+        <div class="cart-total">
+          <h3>Total: ₹<span id="total">0</span></h3>
+        </div>
+
+        <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
