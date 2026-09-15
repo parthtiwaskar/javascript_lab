@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    transition: 0.3s;
+}
+
+h1 {
+    color: #222;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+/* Theme Section */
+.theme-toggle {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.theme-toggle label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+select {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Buttons */
+.storage-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 11px 18px;
+    border: none;
+    border-radius: 6px;
+    background: #2ecc71;
+    color: #07100a;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #27ae60;
+    transform: translateY(-2px);
+}
+
+/* Storage Display */
+.storage-display {
+    background: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.storage-display h2 {
+    margin-bottom: 15px;
+    color: #2ecc71;
+}
+
+.storage-display p {
+    margin: 10px 0;
+    padding: 10px;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+/* Dark Theme */
+body.dark {
+    background: #0b0f0c;
+    color: white;
+}
+
+body.dark h1 {
+    color: #2ecc71;
+}
+
+body.dark .theme-toggle,
+body.dark .storage-display {
+    background: #151b17;
+    box-shadow: 0 4px 20px rgba(46, 204, 113, 0.15);
+}
+
+body.dark .storage-display p {
+    background: #0b0f0c;
+    color: white;
+}
+
+body.dark select {
+    background: #0b0f0c;
+    color: white;
+    border-color: #2ecc71;
+}
+/* Success Message */
+#message {
+  margin-top: 18px;
+  text-align: center;
+  color: #2ecc71;
+  font-weight: bold;
+}
+
+/* Mobile */
+@media (max-width: 500px) {
+  .dark {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .dark h1 {
+    font-size: 24px;
+  }
+}
