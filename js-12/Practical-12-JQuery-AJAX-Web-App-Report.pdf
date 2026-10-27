@@ -1,0 +1,149 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+3 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+4 0 obj
+<< /Length 4433 >>
+stream
+0.080 0.140 0.250 rg 0 796 595 46 re f
+1.000 1.000 1.000 rg BT /F2 9.0 Tf 1 0 0 1 56.0 818.0 Tm (JAVASCRIPT LAB  /  PRACTICAL 12) Tj ET
+0.820 0.870 0.910 RG 0.8 w 56 53 m 539 53 l S
+0.370 0.430 0.510 rg BT /F1 7.3 Tf 1 0 0 1 56.0 36.0 Tm (JAVASCRIPT, JQUERY, DOM, EVENTS, STORAGE AND AJAX) Tj ET
+0.080 0.140 0.250 rg BT /F2 21.0 Tf 1 0 0 1 56.0 770.0 Tm (Interactive Real-Time Task Web App) Tj ET
+0.060 0.480 0.720 rg BT /F2 12.0 Tf 1 0 0 1 56.0 743.0 Tm (JavaScript, jQuery, DOM, Events, Storage and AJAX) Tj ET
+0.370 0.430 0.510 rg BT /F2 8.5 Tf 1 0 0 1 56.0 724.0 Tm (THEORY AND CASE STUDY  |  PRACTICAL 12) Tj ET
+0.920 0.960 0.990 rg 49 691.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 699.0 Tm (Aim) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 662.0 Tm (To build an interactive real-time web application using JavaScript and jQuery,) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 649.0 Tm (demonstrating DOM manipulation, event handling, local storage, and AJAX integration.) Tj ET
+0.920 0.960 0.990 rg 49 619.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 627.0 Tm (Software/Tools Required) Tj ET
+0.060 0.480 0.720 rg 58 589.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 590.0 Tm (HTML5 for task forms, filters, metrics, and application structure.) Tj ET
+0.060 0.480 0.720 rg 58 571.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 572.0 Tm (CSS3 for the responsive task board and interactive states.) Tj ET
+0.060 0.480 0.720 rg 58 553.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 554.0 Tm (JavaScript ES6+ for application data and client-side behavior.) Tj ET
+0.060 0.480 0.720 rg 58 535.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 536.0 Tm (jQuery 3 for DOM manipulation, delegated events, and $.ajax\(\) requests.) Tj ET
+0.060 0.480 0.720 rg 58 517.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 518.0 Tm (Browser localStorage for persistence; VS Code and Live Server for development.) Tj ET
+0.920 0.960 0.990 rg 49 492.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 500.0 Tm (Theory) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 463.0 Tm (1. jQuery DOM manipulation and event handling) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 444.0 Tm (jQuery selectors locate page elements, while methods such as empty\(\), append\(\), text\(\), and) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 431.0 Tm (html\(\) update the interface. Event handlers respond to form submissions, clicks, and) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 418.0 Tm (checkbox changes. Delegated handlers on a stable parent also work for list items created) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 405.0 Tm (later.) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 383.0 Tm (2. localStorage persistence) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 364.0 Tm (localStorage stores string values in the browser across page reloads. JSON.stringify\(\)) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 351.0 Tm (serializes task objects before saving, and JSON.parse\(\) restores them. A storage key keeps) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 338.0 Tm (the application data organized.) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 316.0 Tm (3. AJAX and REST APIs) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 297.0 Tm ($.ajax\(\) sends asynchronous HTTP requests without reloading the page. Success handlers) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 284.0 Tm (process JSON responses and update the interface; error handlers communicate request) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 271.0 Tm (failures. A secondary local JSON resource can provide data when the remote service is) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 258.0 Tm (unavailable.) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 236.0 Tm (4. State-driven rendering) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 217.0 Tm (Application state is the current task collection and selected filter/search query. After a) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 204.0 Tm (user action or imported response updates that state, a renderer rebuilds the visible task) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 191.0 Tm (list and refreshes total, completed, and pending counts.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 5213 >>
+stream
+0.080 0.140 0.250 rg 0 796 595 46 re f
+1.000 1.000 1.000 rg BT /F2 9.0 Tf 1 0 0 1 56.0 818.0 Tm (JAVASCRIPT LAB  /  PRACTICAL 12) Tj ET
+0.820 0.870 0.910 RG 0.8 w 56 53 m 539 53 l S
+0.370 0.430 0.510 rg BT /F1 7.3 Tf 1 0 0 1 56.0 36.0 Tm (JAVASCRIPT, JQUERY, DOM, EVENTS, STORAGE AND AJAX) Tj ET
+0.080 0.140 0.250 rg BT /F2 17.0 Tf 1 0 0 1 56.0 770.0 Tm (Practical 12  |  Case Study and Implementation) Tj ET
+0.920 0.960 0.990 rg 49 726.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 734.0 Tm (Case Study Overview) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 697.0 Tm (The SmartTask case study is a task-management web application. Users can create tasks, mark) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 684.0 Tm (them complete, remove them, filter by completion status, and search titles or categories.) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 671.0 Tm (Tasks persist in localStorage. AJAX actions import tasks from JSONPlaceholder or a bundled) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 658.0 Tm (JSON resource, and a weather panel requests current conditions from Open-Meteo.) Tj ET
+0.920 0.960 0.990 rg 49 628.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 636.0 Tm (Key Features Implemented) Tj ET
+0.060 0.480 0.720 rg 58 598.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 599.0 Tm (Add, complete, and delete tasks with jQuery event handlers.) Tj ET
+0.060 0.480 0.720 rg 58 580.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 581.0 Tm (Filter tasks by all, pending, and completed status; search by text.) Tj ET
+0.060 0.480 0.720 rg 58 562.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 563.0 Tm (Persist task state in localStorage and update live task metrics.) Tj ET
+0.060 0.480 0.720 rg 58 544.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 545.0 Tm (Import JSON tasks asynchronously with a remote API and local JSON fallback.) Tj ET
+0.060 0.480 0.720 rg 58 526.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 527.0 Tm (Request and display live weather through a jQuery AJAX GET request.) Tj ET
+0.060 0.480 0.720 rg 58 508.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 509.0 Tm (Render loading, success, empty, and error feedback without a page reload.) Tj ET
+0.920 0.960 0.990 rg 49 483.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 491.0 Tm (Core Implementation Details) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 454.0 Tm (HTML Structure \(index.html\)) Tj ET
+0.060 0.480 0.720 rg 58 434.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 435.0 Tm (Provide the task form, filter and search controls, dynamic task list, metrics, AJAX) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 421.0 Tm (actions, and weather status area.) Tj ET
+0.060 0.480 0.720 rg 58 402.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 403.0 Tm (Load jQuery before the application script.) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 385.0 Tm (CSS Styling \(style.css\)) Tj ET
+0.060 0.480 0.720 rg 58 365.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 366.0 Tm (Use a responsive grid and accessible visual states for tasks and controls.) Tj ET
+0.060 0.480 0.720 rg 58 347.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 348.0 Tm (Style pending/completed tasks, priorities, filters, and AJAX feedback.) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 330.0 Tm (JavaScript Functionality \(app.js\)) Tj ET
+0.060 0.480 0.720 rg 58 310.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 311.0 Tm (Load and save the task collection as JSON in localStorage.) Tj ET
+0.060 0.480 0.720 rg 58 292.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 293.0 Tm (Use jQuery to render task elements, update statistics, and bind form, filter, search,) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 279.0 Tm (checkbox, and delete events.) Tj ET
+0.060 0.480 0.720 rg 58 260.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 261.0 Tm (Use $.ajax\(\) to request weather and import remote JSON tasks; fall back to tasks.json) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 247.0 Tm (when the remote task request fails.) Tj ET
+0.060 0.480 0.720 rg 58 228.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 229.0 Tm (Update application state, persist changes, and rerender the UI after user actions and) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 215.0 Tm (AJAX responses.) Tj ET
+0.920 0.960 0.990 rg 49 189.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 197.0 Tm (Conclusion) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 160.0 Tm (The SmartTask app combines jQuery-based DOM updates and event handling with persistent) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 147.0 Tm (browser storage and asynchronous API requests. Its task operations, search and filters,) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 134.0 Tm (live statistics, and AJAX imports demonstrate how client-side features can work together) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 121.0 Tm (without full-page reloads.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Type /Catalog /Pages 3 0 R >>
+endobj
+9 0 obj
+<< /Title (Interactive Real-Time Task Web App - Practical 12) /Subject (JavaScript, jQuery, DOM, Events, Storage and AJAX) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000112 00000 n 
+0000000214 00000 n 
+0000000277 00000 n 
+0000004761 00000 n 
+0000004897 00000 n 
+0000010161 00000 n 
+0000010297 00000 n 
+0000010346 00000 n 
+trailer
+<< /Size 10 /Root 8 0 R /Info 9 0 R >>
+startxref
+10487
+%%EOF

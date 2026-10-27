@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practical 10 | Interactive Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="site-container">
+        <!-- Top App Navigation -->
+        <header class="hub-header">
+            <div class="hub-brand">
+                <div class="brand-pill">JS LAB • PRACTICAL 10</div>
+                <h1 class="brand-title">Practical 10 Showcase</h1>
+            </div>
+
+            <!-- Tab Switcher for all 3 exercises from Lab Manual -->
+            <nav class="hub-tabs" aria-label="Practical 10 Navigation">
+                <button class="tab-btn active" data-target="tab-food">
+                    <span class="tab-icon">🍽️</span>
+                    <span class="tab-label">Food Order Manager</span>
+                    <span class="tab-chip">Case Study</span>
+                </button>
+                <button class="tab-btn" data-target="tab-concert">
+                    <span class="tab-icon">🎫</span>
+                    <span class="tab-label">Concert Registration</span>
+                </button>
+                <button class="tab-btn" data-target="tab-workshop">
+                    <span class="tab-icon">📝</span>
+                    <span class="tab-label">Workshop Entry</span>
+                </button>
+            </nav>
+
+            <!-- Student Metadata Badge -->
+            <div class="student-header-tag">
+                <span class="name">Name: Parth Tiwaskar</span>
+                <span class="prn">PRN: 24070521067</span>
+            </div>
+        </header>
+
+        <!-- Main Display Views -->
+        <main class="hub-content">
+            <!-- ============================================== -->
+            <!-- TAB 1: FOOD ORDER MANAGER (Images 2 & 4)        -->
+            <!-- ============================================== -->
+            <section id="tab-food" class="tab-panel active">
+                <div class="panel-header">
+                    <div class="panel-header-left">
+                        <span class="badge-tag">• ORDER DASHBOARD</span>
+                        <div class="brand-title-wrap">
+                            <div class="brand-icon">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                                    <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                                    <line x1="6" y1="1" x2="6" y2="4"></line>
+                                    <line x1="10" y1="1" x2="10" y2="4"></line>
+                                    <line x1="14" y1="1" x2="14" y2="4"></line>
+                                </svg>
+                            </div>
+                            <div>
+                                <h2 class="main-title">Food Order Manager</h2>
+                                <p class="main-subtitle">Manage orders, track progress and sales</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-header-right">
+                        <a href="casestudy/index.html" class="standalone-link" target="_blank">Open Standalone Case Study ↗</a>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <!-- Left: Place New Order Card -->
+                    <div class="card place-order-card">
+                        <h3 class="card-title">+ Place New Order</h3>
+                        <form id="orderForm" class="order-form" novalidate>
+                            <div class="field-group">
+                                <label for="customerName">Customer Name</label>
+                                <input type="text" id="customerName" placeholder="Enter customer name" required>
+                            </div>
+                            <div class="field-group">
+                                <label for="foodItem">Food Item</label>
+                                <input type="text" id="foodItem" placeholder="e.g. Pasta, Pizza, Burger" required>
+                            </div>
+                            <div class="field-group">
+                                <label for="quantity">Quantity</label>
+                                <input type="number" id="quantity" min="1" value="1" required>
+                            </div>
+                            <div class="field-group">
+                                <label for="totalAmount">Total Amount (₹)</label>
+                                <input type="number" id="totalAmount" placeholder="Enter total amount" min="1" required>
+                            </div>
+                            <button type="submit" class="btn-place-order" id="placeOrderBtn">+ Place Order</button>
+                            <div id="orderSuccessMsg" class="success-feedback hidden">✓ Order placed successfully!</div>
+                        </form>
+                    </div>
+
+                    <!-- Right: Order Details Table + Statistics -->
+                    <div class="card order-details-card">
+                        <div class="details-header">
+                            <div class="title-with-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="3" width="7" height="7"></rect>
+                                    <rect x="14" y="14" width="7" height="7"></rect>
+                                    <rect x="3" y="14" width="7" height="7"></rect>
+                                </svg>
+                                <h3>Order Details</h3>
+                            </div>
+                            <button type="button" class="btn-view-orders" id="viewOrdersBtn">↻ View Orders</button>
+                        </div>
+
+                        <div class="table-container">
+                            <table class="orders-table">
+                                <thead>
+                                    <tr>
+                                        <th>Order ID</th>
+                                        <th>Customer Name</th>
+                                        <th>Food Item</th>
+                                        <th>Quantity</th>
+                                        <th>Total Amount</th>
+                                        <th>Order Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="ordersTableBody"></tbody>
+                            </table>
+                        </div>
+
+                        <!-- Summary Cards matching Image 4 -->
+                        <div class="summary-stats-grid">
+                            <div class="stat-card">
+                                <div class="stat-text">
+                                    <span class="stat-label">Total Number of Orders</span>
+                                    <span class="stat-value" id="totalOrdersCount">7</span>
+                                </div>
+                                <div class="stat-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                                        <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                                        <line x1="9" y1="12" x2="15" y2="12"></line>
+                                        <line x1="9" y1="16" x2="13" y2="16"></line>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="stat-card">
+                                <div class="stat-text">
+                                    <span class="stat-label">Total Sales Amount</span>
+                                    <span class="stat-value" id="totalSalesAmount">₹2,270</span>
+                                </div>
+                                <div class="stat-icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <line x1="12" y1="1" x2="12" y2="23"></line>
+                                        <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================== -->
+            <!-- TAB 2: CONCERT REGISTRATION (Image 3)           -->
+            <!-- ============================================== -->
+            <section id="tab-concert" class="tab-panel">
+                <div class="panel-header-center">
+                    <a href="concert.html" class="standalone-link" target="_blank">Open Standalone Concert Page ↗</a>
+                </div>
+
+                <div class="single-card-container">
+                    <div class="card concert-card">
+                        <div class="card-header">
+                            <h2 class="card-title">Concert Registration</h2>
+                        </div>
+                        <form id="concertForm" class="entry-form" novalidate>
+                            <div class="form-group">
+                                <label for="cFullName">Full Name</label>
+                                <input type="text" id="cFullName" placeholder="Enter your full name" required>
+                                <span class="error-text" id="cNameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="cEmail">Email Address</label>
+                                <input type="email" id="cEmail" placeholder="Enter your email address" required>
+                                <span class="error-text" id="cEmailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="cPhone">Phone Number</label>
+                                <input type="tel" id="cPhone" placeholder="Enter your phone number" required>
+                                <span class="error-text" id="cPhoneError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="cTicketCategory">Ticket Category</label>
+                                <div class="select-wrapper">
+                                    <select id="cTicketCategory" required>
+                                        <option value="" disabled selected>Select your ticket</option>
+                                        <option value="General Admission (Free)">General Admission (Free)</option>
+                                        <option value="Silver Pass (₹299)">Silver Pass (₹299)</option>
+                                        <option value="Gold VIP Access (₹699)">Gold VIP Access (₹699)</option>
+                                        <option value="Platinum All-Access (₹1,199)">Platinum All-Access (₹1,199)</option>
+                                    </select>
+                                </div>
+                                <span class="error-text" id="cTicketError"></span>
+                            </div>
+                            <div class="form-group radio-section">
+                                <label class="group-label">Preferred Streaming Platform</label>
+                                <div class="radio-row">
+                                    <label class="radio-label">
+                                        <input type="radio" name="cPlatform" value="YouTube Live" checked>
+                                        <span>YouTube Live</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="cPlatform" value="Twitch">
+                                        <span>Twitch</span>
+                                    </label>
+                                    <label class="radio-label">
+                                        <input type="radio" name="cPlatform" value="Zoom HD">
+                                        <span>Zoom HD</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group checkbox-section">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="cNewsletter">
+                                    <span>Send me updates about future virtual concerts and artist merchandise</span>
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" id="cTerms" required>
+                                    <span>I agree to the event terms and streaming guidelines.</span>
+                                </label>
+                                <span class="error-text" id="cTermsError"></span>
+                            </div>
+                            <button type="submit" class="submit-btn" id="cRegisterBtn">Complete Registration</button>
+                        </form>
+                        <div id="cPassSummary" class="pass-summary hidden"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================== -->
+            <!-- TAB 3: WORKSHOP ENTRY (Image 1)                 -->
+            <!-- ============================================== -->
+            <section id="tab-workshop" class="tab-panel">
+                <div class="panel-header-center">
+                    <a href="workshop.html" class="standalone-link" target="_blank">Open Standalone Workshop Page ↗</a>
+                </div>
+
+                <div class="single-card-container">
+                    <div class="card workshop-card">
+                        <div class="card-header">
+                            <h2 class="card-title">Workshop Entry</h2>
+                            <p class="card-subtitle">Secure your seat for the upcoming technical sessions</p>
+                        </div>
+                        <form id="workshopForm" class="entry-form" novalidate>
+                            <div class="form-group">
+                                <label for="wFullName">Full Name</label>
+                                <input type="text" id="wFullName" placeholder="Enter your full name" required>
+                                <span class="error-text" id="wNameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="wStudentId">Student ID</label>
+                                <input type="text" id="wStudentId" placeholder="Enter student ID (e.g. 24070521067)" required>
+                                <span class="error-text" id="wIdError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="wEmail">Email Address</label>
+                                <input type="email" id="wEmail" placeholder="Enter your email address" required>
+                                <span class="error-text" id="wEmailError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="wWorkshopSelect">Select Workshop</label>
+                                <div class="select-wrapper">
+                                    <select id="wWorkshopSelect" required>
+                                        <option value="" disabled selected>-- Choose a Topic --</option>
+                                        <option value="Full Stack Web Development">Full Stack Web Development</option>
+                                        <option value="Artificial Intelligence & ML">Artificial Intelligence & ML</option>
+                                        <option value="Cloud Computing & DevOps">Cloud Computing & DevOps</option>
+                                        <option value="Cybersecurity & Ethical Hacking">Cybersecurity & Ethical Hacking</option>
+                                        <option value="Data Science & Analytics">Data Science & Analytics</option>
+                                    </select>
+                                </div>
+                                <span class="error-text" id="wWorkshopError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="wSessions">Number of Sessions</label>
+                                <input type="number" id="wSessions" min="1" max="10" value="1" required>
+                                <span class="error-text" id="wSessionsError"></span>
+                            </div>
+                            <button type="submit" class="submit-btn" id="wBookBtn">Book Sessions</button>
+                        </form>
+                        <div id="wBookingSummary" class="booking-summary hidden"></div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="hub-footer">
+            <p>&copy; 2026 Parth Tiwaskar • PRN: 24070521067 • Practical 10 Comprehensive Suite</p>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

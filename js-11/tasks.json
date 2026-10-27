@@ -1,0 +1,30 @@
+[
+  {
+    "id": 201,
+    "title": "Implement Asynchronous AJAX Call with jQuery",
+    "category": "Lab Work",
+    "priority": "high",
+    "completed": false
+  },
+  {
+    "id": 202,
+    "title": "Configure LocalStorage Task Persistence",
+    "category": "Project",
+    "priority": "medium",
+    "completed": true
+  },
+  {
+    "id": 203,
+    "title": "Analyze ES6 Module Import/Export Semantics",
+    "category": "Study",
+    "priority": "medium",
+    "completed": false
+  },
+  {
+    "id": 204,
+    "title": "Test REST API Endpoints with HTTP GET",
+    "category": "Lab Work",
+    "priority": "high",
+    "completed": false
+  }
+]

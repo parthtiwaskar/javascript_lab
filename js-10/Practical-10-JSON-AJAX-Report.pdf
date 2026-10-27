@@ -1,0 +1,142 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+3 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+4 0 obj
+<< /Length 4185 >>
+stream
+0.080 0.140 0.250 rg 0 796 595 46 re f
+1.000 1.000 1.000 rg BT /F2 9.0 Tf 1 0 0 1 56.0 818.0 Tm (JAVASCRIPT LAB  /  PRACTICAL 10) Tj ET
+0.820 0.870 0.910 RG 0.8 w 56 53 m 539 53 l S
+0.370 0.430 0.510 rg BT /F1 7.3 Tf 1 0 0 1 56.0 36.0 Tm (JAVASCRIPT FETCH API AND JQUERY $.GETJSON\(\)) Tj ET
+0.080 0.140 0.250 rg BT /F2 21.0 Tf 1 0 0 1 56.0 770.0 Tm (Loading and Displaying JSON Data) Tj ET
+0.060 0.480 0.720 rg BT /F2 12.0 Tf 1 0 0 1 56.0 743.0 Tm (JavaScript Fetch API and jQuery $.getJSON\(\)) Tj ET
+0.370 0.430 0.510 rg BT /F2 8.5 Tf 1 0 0 1 56.0 724.0 Tm (THEORY AND CASE STUDY  |  PRACTICAL 10) Tj ET
+0.920 0.960 0.990 rg 49 691.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 699.0 Tm (Aim) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 662.0 Tm (To load and display JSON data using the JavaScript fetch\(\) API and jQuery $.getJSON\(\), and) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 649.0 Tm (render the results dynamically in an HTML table.) Tj ET
+0.920 0.960 0.990 rg 49 619.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 627.0 Tm (Software/Tools Required) Tj ET
+0.060 0.480 0.720 rg 58 589.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 590.0 Tm (HTML5 for the page structure and semantic data table.) Tj ET
+0.060 0.480 0.720 rg 58 571.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 572.0 Tm (CSS3 for table styling, layout, and responsive presentation.) Tj ET
+0.060 0.480 0.720 rg 58 553.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 554.0 Tm (JavaScript ES6+ and the Fetch API for asynchronous JSON requests.) Tj ET
+0.060 0.480 0.720 rg 58 535.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 536.0 Tm (jQuery for the $.getJSON\(\) shorthand request method.) Tj ET
+0.060 0.480 0.720 rg 58 517.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 518.0 Tm (VS Code or any text editor, and Live Server for local development.) Tj ET
+0.920 0.960 0.990 rg 49 492.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 500.0 Tm (Theory) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 463.0 Tm (1. JSON and HTTP GET requests) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 444.0 Tm (JSON \(JavaScript Object Notation\) is a lightweight text format for exchanging structured) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 431.0 Tm (data. A client sends an HTTP GET request to a JSON resource, receives a response, and) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 418.0 Tm (parses the response body into JavaScript values before displaying it.) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 396.0 Tm (2. Loading data with fetch\(\)) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 377.0 Tm (The Fetch API returns a Promise for a network response. Calling response.json\(\) parses its) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 364.0 Tm (body asynchronously. A reliable request flow checks response.ok, handles network or parsing) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 351.0 Tm (errors, and reports a useful status to the user.) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 329.0 Tm (3. Loading data with jQuery $.getJSON\(\)) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 310.0 Tm (jQuery $.getJSON\(url\) is a shorthand for an asynchronous GET request expecting JSON. Its) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 297.0 Tm (done callback receives the parsed data, while fail can display a request error. Both APIs) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 284.0 Tm (can supply the same renderer.) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 262.0 Tm (4. Dynamic table rendering) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 243.0 Tm (JavaScript can create table rows and cells from an array of objects, then append them to a) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 230.0 Tm (table body without reloading the page. A clear empty state and safe text insertion keep the) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 217.0 Tm (output understandable and prevent data from being interpreted as markup.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 4656 >>
+stream
+0.080 0.140 0.250 rg 0 796 595 46 re f
+1.000 1.000 1.000 rg BT /F2 9.0 Tf 1 0 0 1 56.0 818.0 Tm (JAVASCRIPT LAB  /  PRACTICAL 10) Tj ET
+0.820 0.870 0.910 RG 0.8 w 56 53 m 539 53 l S
+0.370 0.430 0.510 rg BT /F1 7.3 Tf 1 0 0 1 56.0 36.0 Tm (JAVASCRIPT FETCH API AND JQUERY $.GETJSON\(\)) Tj ET
+0.080 0.140 0.250 rg BT /F2 17.0 Tf 1 0 0 1 56.0 770.0 Tm (Practical 10  |  Case Study and Implementation) Tj ET
+0.920 0.960 0.990 rg 49 726.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 734.0 Tm (Case Study Overview) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 697.0 Tm (This case study builds a JSON data viewer that requests a collection of records from a JSON) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 684.0 Tm (endpoint and presents the returned fields as table rows. Two loading controls demonstrate) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 671.0 Tm (equivalent asynchronous workflows: native fetch\(\) and jQuery $.getJSON\(\). The table is) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 658.0 Tm (populated only after valid JSON data is received.) Tj ET
+0.920 0.960 0.990 rg 49 628.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 636.0 Tm (Key Features Implemented) Tj ET
+0.060 0.480 0.720 rg 58 598.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 599.0 Tm (Load structured JSON from a remote endpoint or local JSON file.) Tj ET
+0.060 0.480 0.720 rg 58 580.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 581.0 Tm (Demonstrate both fetch\(\) and jQuery $.getJSON\(\) GET requests.) Tj ET
+0.060 0.480 0.720 rg 58 562.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 563.0 Tm (Render each record dynamically as a table row and cells.) Tj ET
+0.060 0.480 0.720 rg 58 544.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 545.0 Tm (Show loading, empty-result, and request-error feedback.) Tj ET
+0.060 0.480 0.720 rg 58 526.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 527.0 Tm (Use responsive table styling for different screen widths.) Tj ET
+0.920 0.960 0.990 rg 49 501.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 509.0 Tm (Core Implementation Details) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 472.0 Tm (HTML Structure \(index.html\)) Tj ET
+0.060 0.480 0.720 rg 58 452.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 453.0 Tm (Add controls for loading data and a semantic table with a header and tbody target.) Tj ET
+0.060 0.480 0.720 rg 58 434.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 435.0 Tm (Include a status area for loading, empty, and error messages.) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 417.0 Tm (CSS Styling \(style.css\)) Tj ET
+0.060 0.480 0.720 rg 58 397.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 398.0 Tm (Style the table, headings, row spacing, and status messages.) Tj ET
+0.060 0.480 0.720 rg 58 379.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 380.0 Tm (Use responsive overflow or layout rules for narrow displays.) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 362.0 Tm (JavaScript Functionality \(script.js\)) Tj ET
+0.060 0.480 0.720 rg 58 342.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 343.0 Tm (Request JSON with fetch\(\), check response.ok, and parse using response.json\(\).) Tj ET
+0.060 0.480 0.720 rg 58 324.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 325.0 Tm (Request the same data with $.getJSON\(\) and handle success/failure callbacks.) Tj ET
+0.060 0.480 0.720 rg 58 306.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 307.0 Tm (Pass returned records to a shared renderer that creates cells and inserts text) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 293.0 Tm (safely.) Tj ET
+0.060 0.480 0.720 rg 58 274.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 275.0 Tm (Clear stale rows before rendering and display an empty state when no records are) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 261.0 Tm (returned.) Tj ET
+0.920 0.960 0.990 rg 49 235.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 243.0 Tm (Conclusion) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 206.0 Tm (This JSON viewer demonstrates asynchronous data retrieval using both native JavaScript and) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 193.0 Tm (jQuery. Parsing the response and rendering each record into a table connects HTTP requests) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 180.0 Tm (with practical DOM manipulation, while status and error handling make the page more usable.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Type /Catalog /Pages 3 0 R >>
+endobj
+9 0 obj
+<< /Title (Loading and Displaying JSON Data - Practical 10) /Subject (JavaScript Fetch API and jQuery $.getJSON()) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000112 00000 n 
+0000000214 00000 n 
+0000000277 00000 n 
+0000004513 00000 n 
+0000004649 00000 n 
+0000009356 00000 n 
+0000009492 00000 n 
+0000009541 00000 n 
+trailer
+<< /Size 10 /Root 8 0 R /Info 9 0 R >>
+startxref
+9674
+%%EOF

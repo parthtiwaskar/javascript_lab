@@ -1,4 +1,24 @@
-let schedule = [];
+const storageKey = "scheduleSession";
+const mockSchedule = [
+  { day: "Monday", begin: "8:00 AM", end: "10:00 AM", topic: "HTML Basics" },
+  { day: "Tuesday", begin: "10:00 AM", end: "12:00 PM", topic: "CSS Styling" },
+  { day: "Wednesday", begin: "2:00 PM", end: "4:00 PM", topic: "JavaScript" },
+  {
+    day: "Thursday",
+    begin: "9:00 AM",
+    end: "11:00 AM",
+    topic: "DOM Manipulation",
+  },
+  {
+    day: "Friday",
+    begin: "11:00 AM",
+    end: "1:00 PM",
+    topic: "Web Development",
+  },
+];
+
+const storedSchedule = localStorage.getItem(storageKey);
+let schedule = storedSchedule ? JSON.parse(storedSchedule) : mockSchedule;
 
 let day = document.getElementById("day");
 let begin = document.getElementById("begin");
@@ -6,7 +26,19 @@ let end = document.getElementById("end");
 let topic = document.getElementById("topic");
 
 let addBtn = document.getElementById("addBtn");
+let storeBtn = document.getElementById("storeBtn");
 let clearBtn = document.getElementById("clearBtn");
+
+displaySchedule();
+
+function saveSchedule() {
+  localStorage.setItem(storageKey, JSON.stringify(schedule));
+}
+
+storeBtn.addEventListener("click", function () {
+  saveSchedule();
+  alert("Session stored successfully!");
+});
 
 // Add Schedule
 addBtn.addEventListener("click", function () {
@@ -29,6 +61,7 @@ addBtn.addEventListener("click", function () {
 
   schedule.push(newSchedule);
 
+  saveSchedule();
   displaySchedule();
 
   alert("Schedule added successfully!");
@@ -67,6 +100,7 @@ function displaySchedule() {
 function deleteSchedule(index) {
   schedule.splice(index, 1);
 
+  saveSchedule();
   displaySchedule();
 
   alert("Schedule deleted!");
@@ -75,6 +109,7 @@ function deleteSchedule(index) {
 // Clear All
 clearBtn.addEventListener("click", function () {
   schedule = [];
+  localStorage.removeItem(storageKey);
 
   displaySchedule();
 

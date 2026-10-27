@@ -1,0 +1,145 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+3 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R] /Count 2 >>
+endobj
+4 0 obj
+<< /Length 4196 >>
+stream
+0.080 0.140 0.250 rg 0 796 595 46 re f
+1.000 1.000 1.000 rg BT /F2 9.0 Tf 1 0 0 1 56.0 818.0 Tm (JAVASCRIPT LAB  /  PRACTICAL 11) Tj ET
+0.820 0.870 0.910 RG 0.8 w 56 53 m 539 53 l S
+0.370 0.430 0.510 rg BT /F1 7.3 Tf 1 0 0 1 56.0 36.0 Tm (JAVASCRIPT TIMERS AND ES6 MODULES) Tj ET
+0.080 0.140 0.250 rg BT /F2 21.0 Tf 1 0 0 1 56.0 770.0 Tm (Dynamic Class Scheduler and Countdown) Tj ET
+0.060 0.480 0.720 rg BT /F2 12.0 Tf 1 0 0 1 56.0 743.0 Tm (JavaScript Timers and ES6 Modules) Tj ET
+0.370 0.430 0.510 rg BT /F2 8.5 Tf 1 0 0 1 56.0 724.0 Tm (THEORY AND CASE STUDY  |  PRACTICAL 11) Tj ET
+0.920 0.960 0.990 rg 49 691.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 699.0 Tm (Aim) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 662.0 Tm (To use JavaScript timers \(setTimeout\(\), setInterval\(\)\) and ES6 modules \(import/export\) to) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 649.0 Tm (build a dynamic countdown or class scheduler with real-time updates.) Tj ET
+0.920 0.960 0.990 rg 49 619.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 627.0 Tm (Software/Tools Required) Tj ET
+0.060 0.480 0.720 rg 58 589.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 590.0 Tm (HTML5 for the scheduler form, countdown, and class list.) Tj ET
+0.060 0.480 0.720 rg 58 571.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 572.0 Tm (CSS3 for responsive layout and clear timer/status states.) Tj ET
+0.060 0.480 0.720 rg 58 553.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 554.0 Tm (JavaScript ES6+ for timers, modules, and event handling.) Tj ET
+0.060 0.480 0.720 rg 58 535.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 536.0 Tm (VS Code or any text editor, and Live Server for local development.) Tj ET
+0.060 0.480 0.720 rg 58 517.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 518.0 Tm (A modern browser with ES-module support; serve the project over HTTP.) Tj ET
+0.920 0.960 0.990 rg 49 492.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 500.0 Tm (Theory) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 463.0 Tm (1. setInterval\(\) and live countdowns) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 444.0 Tm (setInterval\(callback, delay\) schedules repeated work. A countdown can calculate the) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 431.0 Tm (remaining time until a target date and refresh its display once per second. The interval) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 418.0 Tm (should be cleared when the target is reached or the countdown is replaced.) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 396.0 Tm (2. setTimeout\(\) and scheduled alerts) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 377.0 Tm (setTimeout\(callback, delay\) schedules a one-time callback. It is suitable for a reminder or) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 364.0 Tm (notification after a delay. Timer identifiers allow pending work to be cancelled with) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 351.0 Tm (clearTimeout\(\).) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 329.0 Tm (3. ES6 modules with import and export) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 310.0 Tm (ES modules divide a program into files with explicit exports and imports. Separating timer) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 297.0 Tm (calculations, scheduler data operations, and UI rendering makes each module easier to) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 284.0 Tm (understand and reuse. Browsers load module scripts using type="module".) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 262.0 Tm (4. Countdown and scheduler updates) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 243.0 Tm (A scheduler stores class details such as subject, instructor, location, start time, and) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 230.0 Tm (duration. The application selects the next relevant class, updates the countdown, and) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 217.0 Tm (refreshes the schedule when a class is added or deleted.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 4 0 R >>
+endobj
+6 0 obj
+<< /Length 4835 >>
+stream
+0.080 0.140 0.250 rg 0 796 595 46 re f
+1.000 1.000 1.000 rg BT /F2 9.0 Tf 1 0 0 1 56.0 818.0 Tm (JAVASCRIPT LAB  /  PRACTICAL 11) Tj ET
+0.820 0.870 0.910 RG 0.8 w 56 53 m 539 53 l S
+0.370 0.430 0.510 rg BT /F1 7.3 Tf 1 0 0 1 56.0 36.0 Tm (JAVASCRIPT TIMERS AND ES6 MODULES) Tj ET
+0.080 0.140 0.250 rg BT /F2 17.0 Tf 1 0 0 1 56.0 770.0 Tm (Practical 11  |  Case Study and Implementation) Tj ET
+0.920 0.960 0.990 rg 49 726.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 734.0 Tm (Case Study Overview) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 697.0 Tm (This case study implements a class scheduler with a live countdown to the next upcoming) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 684.0 Tm (class. Users enter class details, view a dynamically rendered schedule, and remove entries.) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 671.0 Tm (Timer, scheduling, and UI logic are separated into ES modules; class data can persist in) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 658.0 Tm (localStorage between visits.) Tj ET
+0.920 0.960 0.990 rg 49 628.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 636.0 Tm (Key Features Implemented) Tj ET
+0.060 0.480 0.720 rg 58 598.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 599.0 Tm (Display a live days, hours, minutes, and seconds countdown.) Tj ET
+0.060 0.480 0.720 rg 58 580.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 581.0 Tm (Refresh the countdown every second with setInterval\(\).) Tj ET
+0.060 0.480 0.720 rg 58 562.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 563.0 Tm (Schedule a one-time reminder with setTimeout\(\).) Tj ET
+0.060 0.480 0.720 rg 58 544.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 545.0 Tm (Add and delete classes through an interactive form and list.) Tj ET
+0.060 0.480 0.720 rg 58 526.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 527.0 Tm (Organize timer, schedule, and rendering code using ES module imports and exports.) Tj ET
+0.060 0.480 0.720 rg 58 508.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 509.0 Tm (Save and restore scheduled classes using localStorage.) Tj ET
+0.920 0.960 0.990 rg 49 483.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 491.0 Tm (Core Implementation Details) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 454.0 Tm (HTML Structure \(index.html\)) Tj ET
+0.060 0.480 0.720 rg 58 434.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 435.0 Tm (Provide the class form, upcoming-class summary, countdown container, and schedule) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 421.0 Tm (list.) Tj ET
+0.060 0.480 0.720 rg 58 402.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 403.0 Tm (Load the application controller as a module script.) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 385.0 Tm (CSS Styling \(style.css\)) Tj ET
+0.060 0.480 0.720 rg 58 365.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 366.0 Tm (Use a responsive grid for the scheduler form and schedule.) Tj ET
+0.060 0.480 0.720 rg 58 347.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 348.0 Tm (Style countdown units, class status, and feedback for readability.) Tj ET
+0.060 0.480 0.720 rg BT /F2 10.3 Tf 1 0 0 1 56.0 330.0 Tm (JavaScript Modules) Tj ET
+0.060 0.480 0.720 rg 58 310.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 311.0 Tm (timer.js exports countdown calculation/start/stop and scheduled-alert helpers.) Tj ET
+0.060 0.480 0.720 rg 58 292.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 293.0 Tm (scheduler.js exports class loading, saving, add/delete, and next-class selection.) Tj ET
+0.060 0.480 0.720 rg 58 274.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 275.0 Tm (ui.js exports functions that render countdowns, schedule entries, and notifications.) Tj ET
+0.060 0.480 0.720 rg 58 256.0 3 3 re f
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 257.0 Tm (main.js imports these helpers, handles form events, and refreshes the UI when class) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.5 Tf 1 0 0 1 69.0 243.0 Tm (data changes.) Tj ET
+0.920 0.960 0.990 rg 49 217.0 497 25 re f
+0.080 0.140 0.250 rg BT /F2 12.0 Tf 1 0 0 1 56.0 225.0 Tm (Conclusion) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 188.0 Tm (The class scheduler demonstrates how timer APIs support real-time browser interfaces and) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 175.0 Tm (how ES modules divide responsibilities. Its countdown, scheduled reminder, and dynamically) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 162.0 Tm (updated schedule show a practical pattern for building maintainable interactive) Tj ET
+0.140 0.190 0.270 rg BT /F1 9.7 Tf 1 0 0 1 56.0 149.0 Tm (applications.) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 3 0 R /MediaBox [0 0 595 842] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 6 0 R >>
+endobj
+8 0 obj
+<< /Type /Catalog /Pages 3 0 R >>
+endobj
+9 0 obj
+<< /Title (Dynamic Class Scheduler and Countdown - Practical 11) /Subject (JavaScript Timers and ES6 Modules) >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000112 00000 n 
+0000000214 00000 n 
+0000000277 00000 n 
+0000004524 00000 n 
+0000004660 00000 n 
+0000009546 00000 n 
+0000009682 00000 n 
+0000009731 00000 n 
+trailer
+<< /Size 10 /Root 8 0 R /Info 9 0 R >>
+startxref
+9859
+%%EOF

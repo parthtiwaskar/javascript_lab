@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Class Scheduler & Countdown | Practical 11 (Part 1)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-wrapper">
+        <header class="top-header">
+            <div class="brand-section">
+                <span class="badge-tag">EXERCISE 1 • ES6 MODULES & TIMERS</span>
+                <h1 class="header-title">Class Scheduler & Real-Time Countdown</h1>
+            </div>
+
+            <div class="header-meta">
+                <a href="../index.html" class="back-link">← Practical 11 Hub</a>
+                <div class="student-tag">
+                    <span>Name: Parth Tiwaskar</span>
+                    <span>PRN: 24070521067</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section: Dynamic Real-Time Countdown (setInterval) -->
+        <section class="hero-countdown-card">
+            <div class="countdown-header">
+                <div class="live-indicator">
+                    <span class="pulse-dot"></span>
+                    <span>Real-Time Timer (setInterval)</span>
+                </div>
+            </div>
+
+            <h2 class="next-class-name" id="nextClassTitle">Loading Next Class...</h2>
+            <p class="next-class-meta" id="nextClassMeta">Synchronizing with scheduler module...</p>
+
+            <div class="countdown-timer-wrap" id="countdownDisplay">
+                <!-- Dynamically updated by timer.js via setInterval() -->
+            </div>
+        </section>
+
+        <!-- Main Workspace -->
+        <main class="main-grid">
+            <!-- Left: Add Class Form -->
+            <section class="card form-card">
+                <h3 class="card-title">+ Schedule New Lecture</h3>
+                <form id="addClassForm" class="form-stack">
+                    <div class="form-group">
+                        <label for="classSubject">Subject Name</label>
+                        <input type="text" id="classSubject" placeholder="e.g. Artificial Intelligence" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="classInstructor">Instructor Name</label>
+                        <input type="text" id="classInstructor" placeholder="e.g. Dr. Deshmukh" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="classRoom">Room / Meeting Link</label>
+                        <input type="text" id="classRoom" placeholder="e.g. Lab 401 or Online" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="classDateTime">Date & Start Time</label>
+                        <input type="datetime-local" id="classDateTime" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="classDuration">Duration (Minutes)</label>
+                        <select id="classDuration">
+                            <option value="45">45 Minutes</option>
+                            <option value="60" selected>60 Minutes (1 Hour)</option>
+                            <option value="90">90 Minutes (1.5 Hours)</option>
+                            <option value="120">120 Minutes (2 Hours)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-primary" id="saveClassBtn">
+                        Add to Schedule
+                    </button>
+                </form>
+            </section>
+
+            <!-- Right: Real-time Schedule List -->
+            <section class="card list-card">
+                <h3 class="card-title">Weekly Schedule Timeline</h3>
+                <div class="schedule-list" id="scheduleList">
+                    <!-- Populated dynamically via ui.js and scheduler.js -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Parth Tiwaskar • PRN: 24070521067 • Practical 11 Exercise 1 (ES6 Modules & Timers)</p>
+        </footer>
+    </div>
+
+    <!-- ES6 Module entry point -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>

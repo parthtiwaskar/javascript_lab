@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web App with jQuery & AJAX | Practical 11 (Part 2)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div>
+                <span class="badge-tag">EXERCISE 2 • JAVASCRIPT & JQUERY APP</span>
+                <h1 class="brand-title">SmartTask: Real-Time Web App</h1>
+                <p class="brand-desc">DOM manipulation, Event Handling, Storage & AJAX Integration</p>
+            </div>
+
+            <div class="header-right">
+                <a href="../index.html" class="nav-link">← Practical 11 Hub</a>
+                <div class="student-pill">
+                    <span>Name: Parth Tiwaskar</span>
+                    <span>PRN: 24070521067</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Live AJAX Weather Status -->
+        <div class="ajax-weather-strip">
+            <div class="weather-left">
+                <span class="weather-badge">LIVE AJAX</span>
+                <span class="weather-text" id="weatherText">Connecting to remote weather API via $.ajax()...</span>
+            </div>
+            <button type="button" class="btn-ajax-refresh" id="btnRefreshWeather">
+                ↻ Refresh Live Weather
+            </button>
+        </div>
+
+        <!-- Real-Time Metrics -->
+        <section class="stats-row">
+            <div class="stat-box">
+                <span class="stat-label">Total Tracked Tasks</span>
+                <span class="stat-number" id="statTotal">0</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Completed Tasks</span>
+                <span class="stat-number" style="color: #38bdf8;" id="statCompleted">0</span>
+            </div>
+            <div class="stat-box">
+                <span class="stat-label">Pending Deadlines</span>
+                <span class="stat-number" style="color: #f59e0b;" id="statPending">0</span>
+            </div>
+        </section>
+
+        <!-- Main Workspace -->
+        <main class="workspace-grid">
+            <!-- Left: Add Task Form & AJAX Import Panel -->
+            <section class="panel-card">
+                <h3 class="panel-title">
+                    <span>📝</span>
+                    <span>Create New Task</span>
+                </h3>
+
+                <form id="taskForm">
+                    <div class="form-group">
+                        <label for="taskTitle">Task Title</label>
+                        <input type="text" id="taskTitle" placeholder="e.g. Complete AJAX implementation" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="taskCategory">Category</label>
+                        <select id="taskCategory">
+                            <option value="Study">Study</option>
+                            <option value="Lab Work" selected>Lab Work</option>
+                            <option value="Assignment">Assignment</option>
+                            <option value="Project">Project</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="taskPriority">Priority Level</label>
+                        <select id="taskPriority">
+                            <option value="high">High Priority</option>
+                            <option value="medium" selected>Medium Priority</option>
+                            <option value="low">Low Priority</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn-submit" id="btnAddTask">
+                        + Add to Task Board
+                    </button>
+                </form>
+
+                <!-- Remote AJAX Section -->
+                <div class="ajax-section">
+                    <h4>🌐 Remote AJAX Integration</h4>
+                    <p>Demonstrates <code>$.ajax()</code> with GET requests to JSONPlaceholder REST API to asynchronously import tasks into DOM and localStorage.</p>
+                    <button type="button" class="btn-ajax-fetch" id="btnFetchAjaxTasks">
+                        ☁️ Import Tasks from Remote API
+                    </button>
+                    <div class="ajax-log" id="ajaxLogBox"></div>
+                </div>
+            </section>
+
+            <!-- Right: Task List with Filters & Live Search -->
+            <section class="panel-card">
+                <div class="filter-bar">
+                    <div class="filter-btn-group">
+                        <button type="button" class="filter-btn active" data-filter="all">All</button>
+                        <button type="button" class="filter-btn" data-filter="pending">Pending</button>
+                        <button type="button" class="filter-btn" data-filter="completed">Completed</button>
+                    </div>
+
+                    <div style="display: flex; gap: 8px;">
+                        <input type="text" id="taskSearch" class="search-input" placeholder="🔍 Live search tasks...">
+                        <button type="button" class="btn-task-del" id="btnClearAll" title="Clear all tasks" style="border: 1px solid #334155; padding: 6px 10px;">Clear</button>
+                    </div>
+                </div>
+
+                <div class="task-list" id="taskList">
+                    <!-- Populated and managed dynamically via jQuery -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <p>&copy; 2026 Parth Tiwaskar • PRN: 24070521067 • Practical 11 Exercise 2 (JavaScript & jQuery)</p>
+        </footer>
+    </div>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- jQuery App logic -->
+    <script src="app.js"></script>
+</body>
+</html>

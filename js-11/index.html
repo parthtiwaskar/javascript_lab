@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practical 11 | Timers, ES6 Modules & jQuery AJAX App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <!-- jQuery for Exercise 2 -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+    <div class="hub-container">
+        <!-- Top App Navigation & Student Identity -->
+        <header class="hub-header">
+            <div class="hub-brand">
+                <div class="pill-badge">PRACTICAL 11 • ADVANCED JAVASCRIPT & JQUERY</div>
+                <h1 class="brand-heading">Practical 11 Laboratory Hub</h1>
+                <p class="brand-sub">Timers (setTimeout / setInterval), ES6 Modules, and jQuery AJAX Integration</p>
+            </div>
+
+            <!-- Student Metadata -->
+            <div class="student-box">
+                <span class="student-name">Name: Parth Tiwaskar</span>
+                <span class="student-prn">PRN: 24070521067</span>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="exercise-nav" aria-label="Exercise Switcher">
+            <button class="tab-button active" data-tab="tab-part1">
+                <span class="tab-badge">Exercise 1</span>
+                <span class="tab-title">Timers & ES6 Modules</span>
+                <span class="tab-meta">Countdown & Scheduler</span>
+            </button>
+            <button class="tab-button" data-tab="tab-part2">
+                <span class="tab-badge">Exercise 2</span>
+                <span class="tab-title">jQuery & AJAX Web App</span>
+                <span class="tab-meta">DOM, Events, Storage & API</span>
+            </button>
+        </nav>
+
+        <!-- Exercise 1 Tab: Timers & ES6 Modules -->
+        <section id="tab-part1" class="tab-content active">
+            <div class="exercise-banner">
+                <div class="banner-text">
+                    <h3>Assignment 1: Timers & ES6 Modules</h3>
+                    <p>Uses <code>setTimeout()</code>, <code>setInterval()</code>, and ES6 modular syntax (<code>import</code> / <code>export</code>) for a dynamic countdown and real-time class scheduler.</p>
+                </div>
+                <a href="part1/index.html" class="btn-standalone" target="_blank">Open Dedicated Part 1 Page ↗</a>
+            </div>
+
+            <!-- Live Countdown Hero Card -->
+            <div class="hero-countdown-box">
+                <div class="hero-top">
+                    <div class="status-live-tag">
+                        <span class="dot-indicator"></span>
+                        <span>Active Interval Timer (setInterval)</span>
+                    </div>
+                </div>
+                <h2 class="active-class-title" id="hubClassTitle">Loading Upcoming Lecture...</h2>
+                <p class="active-class-details" id="hubClassMeta">Synchronizing with scheduler module...</p>
+
+                <div class="timer-display-flex" id="hubCountdownWrap"></div>
+            </div>
+
+            <!-- Scheduler Grid -->
+            <div class="scheduler-grid">
+                <!-- Add Class Form -->
+                <div class="card card-pad">
+                    <h3 class="card-head">+ Schedule New Lecture</h3>
+                    <form id="hubClassForm" class="form-vertical">
+                        <div class="input-wrap">
+                            <label for="hSubject">Subject Name</label>
+                            <input type="text" id="hSubject" placeholder="e.g. Computer Networks" required>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="hInstructor">Instructor</label>
+                            <input type="text" id="hInstructor" placeholder="e.g. Prof. Mehta" required>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="hRoom">Room / Location</label>
+                            <input type="text" id="hRoom" placeholder="e.g. Lab 204 or Zoom Link" required>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="hDateTime">Date & Time</label>
+                            <input type="datetime-local" id="hDateTime" required>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="hDuration">Duration (Mins)</label>
+                            <select id="hDuration">
+                                <option value="45">45 Minutes</option>
+                                <option value="60" selected>60 Minutes (1 Hour)</option>
+                                <option value="90">90 Minutes (1.5 Hours)</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-action primary">+ Add to Scheduler</button>
+                    </form>
+                </div>
+
+                <!-- Schedule List -->
+                <div class="card card-pad">
+                    <h3 class="card-head">Weekly Class Timeline</h3>
+                    <div class="schedule-items-container" id="hubScheduleList"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exercise 2 Tab: jQuery, DOM, Events, Storage & AJAX -->
+        <section id="tab-part2" class="tab-content">
+            <div class="exercise-banner">
+                <div class="banner-text">
+                    <h3>Assignment 2: JavaScript & jQuery Real-Time Web App</h3>
+                    <p>Demonstrates full jQuery DOM manipulation, event handling, <code>localStorage</code> persistence, and real-time remote AJAX (<code>$.ajax()</code>) REST API integration.</p>
+                </div>
+                <a href="part2/index.html" class="btn-standalone" target="_blank">Open Dedicated Part 2 Page ↗</a>
+            </div>
+
+            <!-- Live Weather & AJAX API Bar -->
+            <div class="weather-ajax-bar">
+                <div class="weather-info-group">
+                    <span class="ajax-chip">$.ajax() GET</span>
+                    <span id="hubWeatherDisplay">Connecting to open REST weather service via jQuery AJAX...</span>
+                </div>
+                <button type="button" class="btn-tiny" id="hubRefreshWeather">↻ Refresh</button>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="stat-cards-trio">
+                <div class="card mini-stat">
+                    <span class="stat-caption">Total Tasks</span>
+                    <span class="stat-num" id="hubStatTotal">0</span>
+                </div>
+                <div class="card mini-stat">
+                    <span class="stat-caption">Completed Tasks</span>
+                    <span class="stat-num color-accent" id="hubStatCompleted">0</span>
+                </div>
+                <div class="card mini-stat">
+                    <span class="stat-caption">Pending Tasks</span>
+                    <span class="stat-num color-amber" id="hubStatPending">0</span>
+                </div>
+            </div>
+
+            <!-- Task Management Workspace -->
+            <div class="jquery-workspace-grid">
+                <!-- Left: Form & AJAX -->
+                <div class="card card-pad">
+                    <h3 class="card-head">Create Task</h3>
+                    <form id="hubTaskForm" class="form-vertical">
+                        <div class="input-wrap">
+                            <label for="hTaskTitle">Task Title</label>
+                            <input type="text" id="hTaskTitle" placeholder="e.g. Submit Experiment 11 Manual" required>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="hTaskCategory">Category</label>
+                            <select id="hTaskCategory">
+                                <option value="Lab Work" selected>Lab Work</option>
+                                <option value="Study">Study</option>
+                                <option value="Project">Project</option>
+                            </select>
+                        </div>
+                        <div class="input-wrap">
+                            <label for="hTaskPriority">Priority</label>
+                            <select id="hTaskPriority">
+                                <option value="high">High</option>
+                                <option value="medium" selected>Medium</option>
+                                <option value="low">Low</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-action primary" id="hubBtnAddTask">+ Add Task</button>
+                    </form>
+
+                    <!-- Remote AJAX Integration Feature -->
+                    <div class="ajax-feature-block">
+                        <h4>⚡ Live REST API Integration (AJAX)</h4>
+                        <p>Calls JSONPlaceholder REST API using <code>$.ajax()</code> to load live tasks dynamically.</p>
+                        <button type="button" class="btn-action outline" id="hubBtnAjaxImport">
+                            ☁️ Fetch Tasks via $.ajax()
+                        </button>
+                        <div class="ajax-feedback-log" id="hubAjaxLog"></div>
+                    </div>
+                </div>
+
+                <!-- Right: Task List with Filters -->
+                <div class="card card-pad">
+                    <div class="filter-header-flex">
+                        <div class="btn-group-filters">
+                            <button type="button" class="f-btn active" data-filter="all">All</button>
+                            <button type="button" class="f-btn" data-filter="pending">Pending</button>
+                            <button type="button" class="f-btn" data-filter="completed">Completed</button>
+                        </div>
+                        <input type="text" id="hubTaskSearch" class="search-field" placeholder="🔍 Search tasks...">
+                    </div>
+
+                    <div class="task-list-stream" id="hubTaskList"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="hub-foot">
+            <p>&copy; 2026 Parth Tiwaskar • PRN: 24070521067 • JavaScript Lab Practical 11</p>
+        </footer>
+    </div>
+
+    <!-- Hub Controller with ES6 Module and jQuery -->
+    <script type="module" src="main.js"></script>
+</body>
+</html>

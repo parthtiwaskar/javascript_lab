@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Registration | Practical 10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="concert.css">
+</head>
+<body>
+
+    <div class="page-container">
+        <!-- Top student badge & navigation -->
+        <header class="top-meta">
+            <a href="index.html" class="back-link">← Back to Practical 10 Hub</a>
+            <div class="student-badge">
+                <span class="student-name">Name: Parth Tiwaskar</span>
+                <span class="student-prn">PRN: 24070521067</span>
+            </div>
+        </header>
+
+        <!-- Main Form Card -->
+        <main class="form-wrapper">
+            <div class="card concert-card">
+                <div class="card-header">
+                    <h1 class="card-title">Concert Registration</h1>
+                </div>
+
+                <form id="concertForm" class="entry-form" novalidate>
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input 
+                            type="text" 
+                            id="fullName" 
+                            name="fullName" 
+                            placeholder="Enter your full name" 
+                            required
+                        >
+                        <span class="error-text" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Enter your email address" 
+                            required
+                        >
+                        <span class="error-text" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input 
+                            type="tel" 
+                            id="phone" 
+                            name="phone" 
+                            placeholder="Enter your phone number" 
+                            required
+                        >
+                        <span class="error-text" id="phoneError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ticketCategory">Ticket Category</label>
+                        <div class="select-wrapper">
+                            <select id="ticketCategory" name="ticketCategory" required>
+                                <option value="" disabled selected>Select your ticket</option>
+                                <option value="General Admission (Free)">General Admission (Free)</option>
+                                <option value="Silver Pass (₹299)">Silver Pass (₹299)</option>
+                                <option value="Gold VIP Access (₹699)">Gold VIP Access (₹699)</option>
+                                <option value="Platinum All-Access (₹1,199)">Platinum All-Access (₹1,199)</option>
+                            </select>
+                        </div>
+                        <span class="error-text" id="ticketError"></span>
+                    </div>
+
+                    <div class="form-group radio-section">
+                        <label class="group-label">Preferred Streaming Platform</label>
+                        <div class="radio-row">
+                            <label class="radio-label">
+                                <input type="radio" name="platform" value="YouTube Live" checked>
+                                <span>YouTube Live</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="platform" value="Twitch">
+                                <span>Twitch</span>
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="platform" value="Zoom HD">
+                                <span>Zoom HD</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox-section">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span>Send me updates about future virtual concerts and artist merchandise</span>
+                        </label>
+
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <span>I agree to the event terms and streaming guidelines.</span>
+                        </label>
+                        <span class="error-text" id="termsError"></span>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="registerBtn">
+                        Complete Registration
+                    </button>
+                </form>
+
+                <!-- Feedback & Ticket Pass -->
+                <div id="passSummary" class="pass-summary hidden"></div>
+            </div>
+        </main>
+
+        <footer class="page-footer">
+            <p>&copy; 2026 Parth Tiwaskar • PRN 24070521067 • Practical 10</p>
+        </footer>
+    </div>
+
+    <script src="concert.js"></script>
+</body>
+</html>

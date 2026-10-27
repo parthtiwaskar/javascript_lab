@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop Entry | Practical 10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="workshop.css">
+</head>
+<body>
+
+    <div class="page-container">
+        <!-- Top student badge -->
+        <header class="top-meta">
+            <a href="index.html" class="back-link">← Back to Practical 10 Hub</a>
+            <div class="student-badge">
+                <span class="student-name">Name: Parth Tiwaskar</span>
+                <span class="student-prn">PRN: 24070521067</span>
+            </div>
+        </header>
+
+        <!-- Main Form Card -->
+        <main class="form-wrapper">
+            <div class="card workshop-card">
+                <div class="card-header">
+                    <h1 class="card-title">Workshop Entry</h1>
+                    <p class="card-subtitle">Secure your seat for the upcoming technical sessions</p>
+                </div>
+
+                <form id="workshopForm" class="entry-form" novalidate>
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input 
+                            type="text" 
+                            id="fullName" 
+                            name="fullName" 
+                            placeholder="Enter your full name" 
+                            required
+                        >
+                        <span class="error-text" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="studentId">Student ID</label>
+                        <input 
+                            type="text" 
+                            id="studentId" 
+                            name="studentId" 
+                            placeholder="Enter student ID (e.g. 24070521067)" 
+                            required
+                        >
+                        <span class="error-text" id="idError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="Enter your email address" 
+                            required
+                        >
+                        <span class="error-text" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="workshopSelect">Select Workshop</label>
+                        <div class="select-wrapper">
+                            <select id="workshopSelect" name="workshop" required>
+                                <option value="" disabled selected>-- Choose a Topic --</option>
+                                <option value="Full Stack Web Development">Full Stack Web Development</option>
+                                <option value="Artificial Intelligence & ML">Artificial Intelligence & ML</option>
+                                <option value="Cloud Computing & DevOps">Cloud Computing & DevOps</option>
+                                <option value="Cybersecurity & Ethical Hacking">Cybersecurity & Ethical Hacking</option>
+                                <option value="Data Science & Analytics">Data Science & Analytics</option>
+                            </select>
+                        </div>
+                        <span class="error-text" id="workshopError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sessions">Number of Sessions</label>
+                        <input 
+                            type="number" 
+                            id="sessions" 
+                            name="sessions" 
+                            min="1" 
+                            max="10" 
+                            value="1" 
+                            required
+                        >
+                        <span class="error-text" id="sessionsError"></span>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="bookBtn">
+                        Book Sessions
+                    </button>
+                </form>
+
+                <!-- Feedback & Booking Summary -->
+                <div id="bookingSummary" class="booking-summary hidden"></div>
+            </div>
+        </main>
+
+        <footer class="page-footer">
+            <p>&copy; 2026 Parth Tiwaskar • PRN 24070521067 • Practical 10</p>
+        </footer>
+    </div>
+
+    <script src="workshop.js"></script>
+</body>
+</html>

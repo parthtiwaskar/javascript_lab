@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order Manager | Case Study Practical 10</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="app-shell">
+        <header class="app-header">
+            <div class="header-left">
+                <span class="badge-tag">• ORDER DASHBOARD</span>
+                <div class="brand-title-wrap">
+                    <div class="brand-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
+                            <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
+                            <line x1="6" y1="1" x2="6" y2="4"></line>
+                            <line x1="10" y1="1" x2="10" y2="4"></line>
+                            <line x1="14" y1="1" x2="14" y2="4"></line>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="main-title">Food Order Manager</h1>
+                        <p class="main-subtitle">Manage orders, track progress and sales</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-right">
+                <a href="../index.html" class="nav-hub-link">← Hub</a>
+                <div class="student-meta-pill">
+                    <span class="student-name">Name: Parth Tiwaskar</span>
+                    <span class="student-prn">PRN: 24070521067</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="dashboard-grid">
+            <!-- Left Card: Place New Order -->
+            <section class="card place-order-card">
+                <h2 class="card-title">+ Place New Order</h2>
+
+                <form id="orderForm" class="order-form" novalidate>
+                    <div class="field-group">
+                        <label for="customerName">Customer Name</label>
+                        <input 
+                            type="text" 
+                            id="customerName" 
+                            name="customerName" 
+                            placeholder="Enter customer name" 
+                            required
+                        >
+                    </div>
+
+                    <div class="field-group">
+                        <label for="foodItem">Food Item</label>
+                        <input 
+                            type="text" 
+                            id="foodItem" 
+                            name="foodItem" 
+                            placeholder="e.g. Pasta, Pizza, Burger" 
+                            required
+                        >
+                    </div>
+
+                    <div class="field-group">
+                        <label for="quantity">Quantity</label>
+                        <input 
+                            type="number" 
+                            id="quantity" 
+                            name="quantity" 
+                            min="1" 
+                            value="1" 
+                            required
+                        >
+                    </div>
+
+                    <div class="field-group">
+                        <label for="totalAmount">Total Amount (₹)</label>
+                        <input 
+                            type="number" 
+                            id="totalAmount" 
+                            name="totalAmount" 
+                            placeholder="Enter total amount" 
+                            min="1" 
+                            required
+                        >
+                    </div>
+
+                    <button type="submit" class="btn-place-order" id="placeOrderBtn">
+                        + Place Order
+                    </button>
+
+                    <div id="orderSuccessMsg" class="success-feedback hidden">
+                        ✓ Order placed successfully!
+                    </div>
+                </form>
+            </section>
+
+            <!-- Right Column: Order Details -->
+            <section class="card order-details-card">
+                <div class="details-header">
+                    <div class="title-with-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="3" width="7" height="7"></rect>
+                            <rect x="14" y="14" width="7" height="7"></rect>
+                            <rect x="3" y="14" width="7" height="7"></rect>
+                        </svg>
+                        <h2>Order Details</h2>
+                    </div>
+
+                    <div class="details-actions">
+                        <button type="button" class="btn-view-orders" id="viewOrdersBtn">
+                            ↻ View Orders
+                        </button>
+                    </div>
+                </div>
+
+                <div class="table-container">
+                    <table class="orders-table" id="ordersTable">
+                        <thead>
+                            <tr>
+                                <th>Order ID</th>
+                                <th>Customer Name</th>
+                                <th>Food Item</th>
+                                <th>Quantity</th>
+                                <th>Total Amount</th>
+                                <th>Order Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="ordersTableBody"></tbody>
+                    </table>
+                </div>
+
+                <!-- Summary Stats Grid -->
+                <div class="summary-stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-text">
+                            <span class="stat-label">Total Number of Orders</span>
+                            <span class="stat-value" id="totalOrdersCount">7</span>
+                        </div>
+                        <div class="stat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+                                <rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect>
+                                <line x1="9" y1="12" x2="15" y2="12"></line>
+                                <line x1="9" y1="16" x2="13" y2="16"></line>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-text">
+                            <span class="stat-label">Total Sales Amount</span>
+                            <span class="stat-value" id="totalSalesAmount">₹2,270</span>
+                        </div>
+                        <div class="stat-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="1" x2="12" y2="23"></line>
+                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="app-footer">
+            <p>&copy; 2026 Parth Tiwaskar • PRN: 24070521067 • Practical 10 Case Study</p>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
